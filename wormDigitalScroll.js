@@ -5,7 +5,7 @@ Element.prototype.elementInView = function() {
 	return yInView && xInView
 }
 
-var numscrolling = function(options) {
+var wormDigitalScroll = function(options) {
 	var that = this,
 		dqtime
 	for (var i in options) this[i] = options[i]
@@ -53,7 +53,7 @@ var numscrolling = function(options) {
 	window.addEventListener('scroll', scroll, false)
 }
 
-numscrolling.prototype = {
+wormDigitalScroll.prototype = {
 	el: null,
 	time: 500
 }
